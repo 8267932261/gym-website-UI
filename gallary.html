@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India best gym</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+    <style>
+        /* reset sttings*/
+        body {
+            padding: 0px;
+            margin: 0;
+            height: 10%;
+
+
+            /* background: url("img/c2.jpg");  */
+
+
+
+            width: 100%;
+            font-family: 'Baloo 2', cursive;
+            ;
+        }
+
+        .left {
+            color: white;
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 55px;
+            top: 20px;
+            padding-bottom: 30px;
+        }
+
+        .mid {
+            color: white;
+            display: block;
+            width: 50%;
+            margin: 12px auto;
+            margin-top: 20px;
+            /* border: 2px solid green; */
+        }
+
+        .right {
+            position: absolute;
+            right: 19px;
+            top: 28px;
+            color: white;
+            display: inline-block;
+            /* border: 2px solid black; */
+        }
+
+        .navbar {
+            display: inline-block;
+            background-color: black;
+            border-radius: 10px;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .left img {
+            width: 80px;
+            height: 60px;
+            padding-left: 20px;
+
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 1px;
+            padding-left: 22px;
+            font-size: 20px;
+            color: black;
+            padding-bottom: 100px;
+
+        }
+
+        .btn {
+            margin: -7px 9px;
+            margin-left: 15px;
+            padding-right: 33px;
+
+            font-size: 22px;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            border: 2px solid grey;
+            ;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(70, 68, 68);
+        }
+
+        .contener {
+            /* border: 3px solid black; */
+            margin: 48px 216px;
+            padding: 43px 80px;
+            width: 33%;
+            border-radius: 10px;
+
+        }
+
+        h1 {
+            padding-bottom: 9px;
+            margin-left: 48px;
+        }
+
+        .form input {
+            text-align: center;
+            display: block;
+            width: 395px;
+            padding: 6px;
+            border: 2px solid balck;
+            margin: 11px auto;
+            font-family: 'Baloo 2', cursive;
+            font-size: 18px;
+        }
+
+        .contener button {
+            display: block;
+            width: 83%;
+            margin: auto;
+
+
+        }
+
+        #carouselExampleIndicators {
+            width: 10;
+            height: 50%;
+        }
+
+        .carousel-inner img {
+            height: 10%;
+        }
+
+        .card-deck {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        #heading {
+
+
+            margin-top: 15px;
+            margin-right: 40px;
+            padding-left: 600px;
+            padding-top: 10px;
+
+        }
+
+        .card-deck {
+            font-family: 'Baloo 2', cursive;
+            font-size: 20px;
+
+        }
+
+        .footer {
+            margin-left: 400px;
+            margin-right: 60px;
+        }
+
+        #con {
+
+
+
+
+            margin-top: 15px;
+            margin-right: 40px;
+            padding-left: 600px;
+            padding-top: 10px;
+
+        }
+
+        .form-group {
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 60px;
+            font-family: 'Baloo 2', cursive;
+            font-size: 20px;
+
+        }
+
+        .form-group1 {
+            padding-left: 50px;
+            padding-right: 50px;
+
+            font-family: 'Baloo 2', cursive;
+            font-size: 20px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        /* The grid: Four equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 25%;
+            padding: 10px;
+        }
+
+        /* Style the images inside the grid */
+        .column img {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+        .column img:hover {
+            opacity: 1;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* The expanding image container */
+        .container {
+            position: relative;
+            display: none;
+        }
+
+        /* Expanding image text */
+        #imgtext {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: white;
+            font-size: 20px;
+        }
+
+        /* Closable button inside the expanded image */
+        .closebtn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            color: white;
+            font-size: 35px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/lg.jpg" alt="">
+            <div>
+                Ajay gym
+            </div>
+
+
+
+
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html"> about us</a></li>
+                <li><a href="#" class="active">Gallary</a></li>
+                <li><a href="contact.html"> contact us</a></li>
+
+            </ul>
+
+
+
+        </div>
+        <!-- right box for butyon -->
+        <div class="right">
+            <button class="btn">Join Us</button>
+            <button class="btn">User Id</button>
+        </div>
+
+
+        <h1 id="heading">Our Gallary</h1>
+
+        <div style="text-align:center">
+
+            <p>Click on the images below:</p>
+        </div>
+
+        <!-- The four columns -->
+        <div class="row">
+            <div class="column">
+                <img src="img/g1.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="img/g8.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="img/g7.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="img/g6.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="img/g5.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="img/g4.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="img/g3.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="img/g2.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+            </div>
+        </div>
+
+        <div class="container">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" style="width:100%">
+            <div id="imgtext"></div>
+        </div>
+
+        <script>
+            function myFunction(imgs) {
+                var expandImg = document.getElementById("expandedImg");
+                var imgText = document.getElementById("imgtext");
+                expandImg.src = imgs.src;
+                imgText.innerHTML = imgs.alt;
+                expandImg.parentElement.style.display = "block";
+            }
+        </script>
+</body>
+
+
+
+
+
+
+
+
+
+<hr>
+<footer class="footer">
+    <p class="float-right"><a href="gallary.html">Back to top</a></p>
+    <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</html>
